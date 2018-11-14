@@ -9,6 +9,7 @@ class Artist
   
   def initialize(name)
     @name = name
+<<<<<<< HEAD
     @@all << self 
   end
 
@@ -27,4 +28,23 @@ class Artist
       song.genre
     end
   end
+=======
+    @songs << self 
+  end
+
+  def new_song(name, genre)
+    Song.new(name, genre,)
+    @songs
+  end
+
+#   def songs
+#     @songs
+#   end
+
+#   def genres
+#     @songs.collect do |song|
+#       song.genre
+#     end
+#   end
+>>>>>>> 3a26abde53cab367c3f876d2490379079a1a83e7
  end
